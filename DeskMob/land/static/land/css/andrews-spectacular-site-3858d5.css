@@ -3773,7 +3773,7 @@
   }
 }
 
-.ButtonGo-up{
+.ButtonGo-up img{
   position: fixed;
   left: auto;
   top: auto;
@@ -3785,4 +3785,8 @@
   opacity: 0.5;
   -webkit-transition: opacity 270ms cubic-bezier(1, -.005, 0, .989);
   transition: opacity 270ms cubic-bezier(1, -.005, 0, .989);
+}
+.ButtonGo-up img:hover{
+  opacity: 1;
+  size: 100px;
 }
