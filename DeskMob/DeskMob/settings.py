@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-v&_)!7-kl+l46v)0kjkwbnbvw4c9v)^y72v%7672u**6i#^4+z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'lisatrot.pythonanywhere.com']
 
 
 # Application definition
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'DeskMob.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
     }
 }
 
@@ -130,3 +130,5 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 USER_AGENTS_CACHE = 'default'
+
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
