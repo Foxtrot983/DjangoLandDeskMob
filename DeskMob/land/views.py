@@ -34,13 +34,14 @@ def main(request): #Основной темплэйт тут лежит
         else:
             errors = form.errors.as_json()
             return JsonResponse({"errors": errors}, status=400)
-
-    if request.user_agent.is_mobile:
+    return render(request, 'main.html', context)
+"""    if request.user_agent.is_mobile:
         return render(request, 'm_main.html', context)
     elif request.user_agent.is_tablet:
         return render(request, 't_main.html', context)
     else:
         return render(request, 'main.html', context)
+"""
 
 
 def ajax_posting1(request):
