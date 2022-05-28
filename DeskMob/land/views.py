@@ -1,10 +1,11 @@
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from rest_framework import generics
 
 from .forms import ReportForm1, ReportForm2
-
 from .models import Report
+from .serializer import ReportSerializer
 
 def is_ajax(request):
     return request.META.get('HTTP_X_REQUESTED_WITH') == 'XMLHttpRequest'
@@ -72,3 +73,8 @@ def ajax_posting2(request):
 def looklogs(request):
     object = Report.objects.all().order_by('-date')
     return render(request,'looklogs.html', {'object': object})
+
+
+class ReportCreateAPI(generics.CreateAPIView):
+    queryset = Report.objects.all()
+    serializer_class = ReportSerializer
