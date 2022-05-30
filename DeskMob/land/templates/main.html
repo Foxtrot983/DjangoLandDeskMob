@@ -13,7 +13,8 @@
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <meta description='Создание сайтов любой сложности по приемлемым ценам, с SEO-оптимизацией, Прототип бесплатно'>
         <link href={% static '/land/css/andrews-spectacular-site-3858d5.css' %} rel="stylesheet" type="text/css">
-        <script src={% static '/land/js/webfont.js' %} type="text/javascript"></script>
+        <script src={% static "/land/js/webfont.js" %} type="text/javascript"></script>
+        <script src={% static "/land/js/jquery-3.js" %} type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href={% static '/land/css/css.css'%} media="all">
         <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Russo One:regular"]  }});</script>
         <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
@@ -259,7 +260,8 @@
                                         <input type="text" class="form-text w-input" maxlength="256" name="name" data-name="Name" placeholder="Ваше Имя:" id="name" required="">
                                         <input type="email" class="form-text w-input" maxlength="256" name="email" data-name="Email" placeholder="Ваш Email:" id="email" required="">
                                         <input type="text" class="form-text w-input" maxlength="256" name="phone" data-name="Phone" placeholder="Ваш номер телефона:" id="phone" required="">
-                                        <textarea type="text" class="form2 project w-node-fadefb48-7f0a-a7b5-dace-19a42e150200-1331f3c0 w-input" maxlength="1000" name="description" data-name="Project" placeholder="Описание проекта" id="Project" required=""></textarea>                                        <div id="w-node-_9f32183c-3aea-d614-39a5-373d881afdf7-1331f3c0" class="button-contacts">
+                                        <textarea type="text" class="form2 project w-node-fadefb48-7f0a-a7b5-dace-19a42e150200-1331f3c0 w-input" maxlength="1000" name="description" data-name="Project" placeholder="Описание проекта" id="Project" required="" style="line-height: 20px;"></textarea>                                        
+                                        <div id="w-node-_9f32183c-3aea-d614-39a5-373d881afdf7-1331f3c0" class="button-contacts">
                                             <div class="text-block-6">Нажимая на кнопку “отправить” вы соглашаетесь с условиями Политики конфиденциальности</div>
                                             <input type="submit" value="отправить" data-wait="Please wait..." id="w-node-fadefb48-7f0a-a7b5-dace-19a42e150201-1331f3c0" class="submit-button-3 w-button">
                                         </div>
@@ -284,9 +286,9 @@
                 <a href="#main-screen" data-w-id="19193092-d10c-acfd-f0be-cda635f6bba1" style="display: block; opacity: 0;" class="go-up w-inline-block w--current">
                     <img src={% static "/land/img/go-up-here.png" %}  alt="" class="image-16">
                 </a>
+                <script src={% static "/land/js/webflow.js" %} type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
                 <script src={% static "/land/js/jquery-3.js" %} type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
                 <script type='text/javascript'>
-
                     $(".go-up").click(function (){
                         $("body,html").animate({
                             scrollTop:0
@@ -345,11 +347,9 @@
                     })
                     $(".w-icon-nav-menu").click(function() {
                         window.setTimeout($('.nav-menu-2').animate({height: '36vh',}), 1000)
-
                     })
 
-                </script>
-                <script src={% static "/land/js/webflow.js" %} type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+                    
 
 
             </body>
