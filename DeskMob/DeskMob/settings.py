@@ -26,7 +26,7 @@ SECRET_KEY = '!7-kl+l46v)0kjkwbnbvw4c9v)^y72v%7672u**6i#^4+z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'lisatrot.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
